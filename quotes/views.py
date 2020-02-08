@@ -1,3 +1,4 @@
+#Copyright (c) 2020 Vinit Parikh All Rights Reserved
 #houses the functions that intake requests and return the webpages requested
 
 from django.shortcuts import render, redirect
