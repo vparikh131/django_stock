@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% if ticker %}
+    {{ticker}}
+{% endif %}
+
+{% if api %}
+    {% if api == "Error..." %}
+    There was a problem... please try again...
+
+    {% else %}
+        {% for key, value in api.items %}
+            {{ key }}: {{ value }}<br/>
+        {% endfor %}
+
+    {% endif %}
+{% endif %}
+
+{% endblock %}
